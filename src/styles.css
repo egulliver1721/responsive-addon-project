@@ -28,6 +28,16 @@ section.secondary {
   padding-bottom: 80px;
 }
 
+section.third {
+  background: #472cb331;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section h5 {
+  color: white;
+}
+
 .button-learn-more {
   background: #462cb3;
   padding: 10px 60px;
@@ -194,6 +204,37 @@ main .grid-2-columns {
 .card-content {
   padding: 20px;
 }
+
+img.css-filter {
+  filter: contrast(80%);
+}
+
+table {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+}
+.table-row {
+  background: #ffffffa0;
+  color: #472cb38c;
+}
+
+th {
+  padding: 20px;
+}
+td {
+  padding: 10px 100px;
+  color: #18151edc;
+}
+
+table.rounded-corners {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 10px;
+  border: 1px solid #ffffffa0;
+  overflow: hidden;
+}
+
 .grid-3-columns-narrow-first {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
