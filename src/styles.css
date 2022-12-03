@@ -8,6 +8,14 @@
 .text-center {
   text-align: center;
 }
+
+.margin-top {
+  margin-top: 50px;
+}
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -202,6 +210,10 @@ main .grid-2-columns {
   background-size: cover;
   color: white;
   padding: 30px 100px;
+}
+
+.instagram-embed {
+  margin-bottom: 50px;
 }
 
 .grid-3-columns-narrow-first a {
