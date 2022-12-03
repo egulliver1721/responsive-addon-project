@@ -5,8 +5,38 @@
   text-align: center;
 }
 
-.section {
-  max-width: 1200px;
+.text-center {
+  text-align: center;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+section.secondary {
+  background: #f8f8f8;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.button-learn-more {
+  background: #462cb3;
+  padding: 10px 60px;
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: none;
+  text-decoration: none;
+  display: block;
   margin: 0 auto;
 }
 
@@ -82,7 +112,6 @@ p {
   font-weight: 400;
   font-size: 13px;
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .button {
@@ -105,7 +134,7 @@ p {
 main {
   background-color: white;
 }
-main .grid {
+main .grid-2-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
@@ -113,7 +142,7 @@ main .grid {
   place-items: center;
 }
 
-main p {
+.grid-content p {
   color: black;
   text-align: justify;
   font-size: 16px;
@@ -122,10 +151,42 @@ main p {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
+  display: block;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.card-header.grid-2-columns {
+  grid-gap: 0;
+  margin: 0;
+}
 .grid-3-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 64px;
+}
+
+.grid-3-colums p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card {
+  background: white;
+  margin: 20px 0 0 0;
+}
+
+.card-content {
+  padding: 20px;
+}
+.grid-3-columns-narrow-first {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 40px;
@@ -140,10 +201,10 @@ main p {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-  padding: 30px 30px;
+  padding: 30px 100px;
 }
 
-.grid-3-columns a {
+.grid-3-columns-narrow-first a {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-family: "Poppins";
@@ -166,6 +227,11 @@ footer li {
     padding: 60px;
   }
 
+  section {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+  }
   h1 {
     font-size: 35px;
     line-height: 1.2;
@@ -183,7 +249,7 @@ footer li {
     margin-top: 10px;
   }
 
-  main .grid {
+  main .grid-2-columns {
     margin: 20px 0 0 0;
     grid-template-columns: 1fr;
     grid-gap: 0;
@@ -193,11 +259,11 @@ footer li {
     padding: 10px 20px;
   }
 
-  main h6 {
+  .grid-content h6 {
     font-size: 25px;
   }
 
-  main p {
+  .grid-content p {
     font-size: 12px;
   }
 
@@ -208,6 +274,11 @@ footer li {
   }
 
   .grid-3-columns {
+    grid-template-columns: 1fr;
+    grid-gap: 64px;
+  }
+
+  .grid-3-columns-narrow-first {
     grid-template-columns: 1fr;
   }
 
