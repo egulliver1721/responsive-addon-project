@@ -214,6 +214,10 @@ table {
   margin-left: auto;
   margin-top: 50px;
 }
+
+.table-overflow {
+  overflow-x: auto;
+}
 .table-row {
   background: #ffffffa0;
   color: #472cb38c;
